@@ -1,11 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, Text, View, Image } from 'react-native';
+import logo from './assets/logo.png';
+import firebase from 'firebase'
 export default function App() {
+  
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Image source = {logo} style={{width: 250, height: 250}} />
+      <Text style={{color: 'black', fontSize: 18, }}>Hello Final Year  Project!
+      
+      </Text>
       <StatusBar style="auto" />
     </View>
   );
